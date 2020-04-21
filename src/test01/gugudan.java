@@ -16,6 +16,9 @@ public class gugudan {
 				}
 			}
 		}
+		else if(input <0) {
+			System.out.println("can't print gugudan");
+		}
 		else {
 			for(int i=1;i<=9;i++) {
 				System.out.println(input + " * " + i + " = " + (input*i));
