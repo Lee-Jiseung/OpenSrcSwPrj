@@ -9,10 +9,19 @@ public class gugudan {
 		Scanner scanner = new Scanner(System.in);
 		
 		int input = scanner.nextInt();
-		
-		for(int i=1;i<=9;i++) {
-			System.out.println(input + " * " + i + " = " + (input*i));
+		if (input==0) {
+			for(int j=2;j<=9;j++) {
+				for(int i=1;i<=9;i++) {
+					System.out.println(j + " * " + i + " = " + (j*i));
+				}
+			}
 		}
+		else {
+			for(int i=1;i<=9;i++) {
+				System.out.println(input + " * " + i + " = " + (input*i));
+			}
+		}
+		
 	}
 
 }
